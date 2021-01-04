@@ -8,15 +8,15 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
 {
 
     public static PhotonLobby lobby;
-    public GameObject battleButton;
-    public GameObject cancelButton;
+    public GameObject connectedScreen;
+    public GameObject disconnectedScreen;
 
     private void Awake()
     {
         lobby = this;
     }
     // Start is called before the first frame update
-    void Start()
+    void OnClick_ConnectBtn()
     {
         PhotonNetwork.ConnectUsingSettings();
     }
@@ -25,14 +25,24 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
     {
         Debug.Log("Player has connected to the Photon master server");
         PhotonNetwork.AutomaticallySyncScene = true;
-        battleButton.SetActive(true);
-        cancelButton.SetActive(false);
+        connectedScreen.SetActive(true);
+        disconnectedScreen.SetActive(false);
     }
+
+    public override void OnDisconnected(DisconnectCause cause)
+    {
+        Debug.Log("Player has connected to the Photon master server");
+        PhotonNetwork.AutomaticallySyncScene = true;
+        connectedScreen.SetActive(false);
+        disconnectedScreen.SetActive(true);
+    }
+
+
 
     public void OnBattleButtonClicked()
     {
-        battleButton.SetActive(false);
-        cancelButton.SetActive(true);
+        //battleButton.SetActive(false);
+        //cancelButton.SetActive(true);
         PhotonNetwork.JoinRandomRoom();
     }
 
@@ -58,8 +68,8 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
 
     public void OnCancelButtonClicked()
     {
-        cancelButton.SetActive(false);
-        battleButton.SetActive(true);
+        //cancelButton.SetActive(false);
+        //battleButton.SetActive(true);
         PhotonNetwork.LeaveRoom();
     }
 
