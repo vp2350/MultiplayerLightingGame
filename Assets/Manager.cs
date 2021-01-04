@@ -20,6 +20,6 @@ public class Manager : MonoBehaviour
 
     void SpawnPlayer()
     {
-        PhotonNetwork.Instantiate(playerPrefab.name, playerPrefab.transform.position, playerPrefab.transform.rotation);
+        PhotonNetwork.Instantiate(playerPrefab.name, transform.position, playerPrefab.transform.rotation);
     }
 }
