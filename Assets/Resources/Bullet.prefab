@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3702107632546568221
+--- !u!1 &1245522575766966180
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2297847835658178637}
-  - component: {fileID: 3432779434526828780}
+  - component: {fileID: 4811452711848711011}
+  - component: {fileID: 1849333624357844828}
   m_Layer: 0
   m_Name: Freeform Light 2D (1)
   m_TagString: Untagged
@@ -17,27 +17,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2297847835658178637
+--- !u!4 &4811452711848711011
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3702107632546568221}
+  m_GameObject: {fileID: 1245522575766966180}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0031, y: 0.0057000024, z: 0}
-  m_LocalScale: {x: 0.37265623, y: 0.1125, z: 1}
+  m_LocalPosition: {x: -0.00224, y: -0.00093, z: 0}
+  m_LocalScale: {x: 0.17386276, y: 0.04578975, z: 1}
   m_Children: []
-  m_Father: {fileID: 6708316329793704817}
+  m_Father: {fileID: 1924930023515778212}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3432779434526828780
+--- !u!114 &1849333624357844828
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3702107632546568221}
+  m_GameObject: {fileID: 1245522575766966180}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0
   m_Color: {r: 1, g: 0, b: 0.87771463, a: 1}
-  m_Intensity: 57.84
+  m_Intensity: 65.7
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
@@ -84,7 +84,7 @@ MonoBehaviour:
   - {x: 0.0030242205, y: 0.01959467, z: 0}
   - {x: 0.004255295, y: 0.0036680698, z: 0}
   - {x: 0.009295464, y: -0.011869907, z: 0}
---- !u!1 &4722595215793734882
+--- !u!1 &6737790608883016489
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,11 +92,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6708316329793704817}
-  - component: {fileID: 8642232265484358975}
-  - component: {fileID: 7083170172878285661}
-  - component: {fileID: 8821787685166895095}
-  - component: {fileID: 7730950519283450686}
+  - component: {fileID: 1924930023515778212}
+  - component: {fileID: 825830316793768992}
+  - component: {fileID: 1939126017987065443}
+  - component: {fileID: 4649207014189282745}
+  - component: {fileID: 5439664415484793813}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -104,36 +104,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6708316329793704817
+--- !u!4 &1924930023515778212
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4722595215793734882}
+  m_GameObject: {fileID: 6737790608883016489}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.18555103, y: 0.82491803, z: 0}
+  m_LocalPosition: {x: -0.08895588, y: 0.74955904, z: 0}
   m_LocalScale: {x: 15.575034, y: 11.392265, z: 1}
   m_Children:
-  - {fileID: 7466258816958046184}
-  - {fileID: 2297847835658178637}
+  - {fileID: 5091110339295371675}
+  - {fileID: 4811452711848711011}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &8642232265484358975
+--- !u!61 &825830316793768992
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4722595215793734882}
+  m_GameObject: {fileID: 6737790608883016489}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0016621815, y: 0.010255545}
+  m_Offset: {x: -0.00004689925, y: 0.0009363841}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -144,16 +144,16 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.0076490943, y: 0.00442503}
+  m_Size: {x: 0.0024026115, y: 0.004153351}
   m_EdgeRadius: 0
---- !u!50 &7083170172878285661
+--- !u!50 &1939126017987065443
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4722595215793734882}
+  m_GameObject: {fileID: 6737790608883016489}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -167,13 +167,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8821787685166895095
+--- !u!114 &4649207014189282745
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4722595215793734882}
+  m_GameObject: {fileID: 6737790608883016489}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
@@ -189,21 +189,21 @@ MonoBehaviour:
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &7730950519283450686
+--- !u!114 &5439664415484793813
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4722595215793734882}
+  m_GameObject: {fileID: 6737790608883016489}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a45e3c53ce742c418ac94a3699699e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PV: {fileID: 8821787685166895095}
+  PV: {fileID: 4649207014189282745}
   destroyTime: 2
---- !u!1 &7401420655866248585
+--- !u!1 &8415918584134534657
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -211,8 +211,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7466258816958046184}
-  - component: {fileID: 6199195894481879470}
+  - component: {fileID: 5091110339295371675}
+  - component: {fileID: 1741590952396197940}
   m_Layer: 0
   m_Name: Freeform Light 2D
   m_TagString: Untagged
@@ -220,27 +220,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7466258816958046184
+--- !u!4 &5091110339295371675
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7401420655866248585}
+  m_GameObject: {fileID: 8415918584134534657}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0033, z: 0}
-  m_LocalScale: {x: 0.12796876, y: 0.166875, z: 1}
+  m_LocalPosition: {x: -0.0006599998, y: -0.000969999, z: 0}
+  m_LocalScale: {x: 0.045737315, y: 0.04533619, z: 1}
   m_Children: []
-  m_Father: {fileID: 6708316329793704817}
+  m_Father: {fileID: 1924930023515778212}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6199195894481879470
+--- !u!114 &1741590952396197940
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7401420655866248585}
+  m_GameObject: {fileID: 8415918584134534657}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0
   m_Color: {r: 0.9622642, g: 0.34605935, b: 0, a: 1}
-  m_Intensity: 12.59
+  m_Intensity: 16.02
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}

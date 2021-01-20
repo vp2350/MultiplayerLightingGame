@@ -20,7 +20,7 @@ public class MyBullet : MonoBehaviourPun
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(forwardVector * Time.deltaTime * 20f); //if(!PV.IsMine) SmoothMovement();
+        transform.Translate(forwardVector * Time.deltaTime * 10f); //if(!PV.IsMine) SmoothMovement();
     }
 
     void OnCollisionEnter2D(Collision2D col)

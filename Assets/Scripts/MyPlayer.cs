@@ -13,16 +13,29 @@ public class MyPlayer : MonoBehaviourPun, IPunObservable
     public GameObject lightmask1;
     private Vector3 smoothMove;
     private Quaternion smoothRotation;
+    [SerializeField] GameObject cameraObject;
     private Camera camera;
+    private GameObject sceneCamera;
     public float health;
     private Rigidbody2D rb;
     [SerializeField] GameObject firePoint;
+    public int deaths;
+    [SerializeField] GameObject canvas;
   
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-        camera = Camera.main;
         health = 100;
+        if (PV.IsMine)
+        {
+            canvas.SetActive(true);
+            //sceneCamera = GameObject.Find("Main Camera");
+            deaths = 0;
+            //sceneCamera.SetActive(false);
+            cameraObject.SetActive(true);
+            camera = cameraObject.GetComponent<Camera>();
+        }
+
     }
     void Update()
     {
@@ -34,10 +47,15 @@ public class MyPlayer : MonoBehaviourPun, IPunObservable
             SmoothRotation();
         }
 
-        if(PV.IsMine)
-        {
-
-        }
+        //if(PV.IsMine)
+        //{
+            if(health<=0)
+            {
+                deaths++;
+                rb.position = (new Vector3(0.32f, -0.72f, -5f));
+                health = 100;
+            }
+        //}
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && PV.IsMine)
         {
@@ -69,7 +87,7 @@ public class MyPlayer : MonoBehaviourPun, IPunObservable
         move.y = Input.GetAxisRaw("Vertical");
         rb.MovePosition(rb.position + move * moveSpeed * Time.deltaTime);
 
-        Vector2 mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 mousePos = cameraObject.GetComponent<Camera>().ScreenToWorldPoint(Input.mousePosition);
         Vector2 lookDir = mousePos - rb.position;
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
         rb.SetRotation(Quaternion.Euler(new Vector3(0,0,angle)));
